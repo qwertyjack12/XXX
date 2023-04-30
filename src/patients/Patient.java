@@ -1,10 +1,9 @@
 package patients;
 
 import analysis.Analysis;
-import laboratory.Laboratory;
 
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 /**
@@ -14,7 +13,8 @@ import java.util.Objects;
  * @version 1.0
  */
 
-public class Patient implements PatientInterface {
+public class Patient implements PatientInterface, Serializable {
+    private int id;
     /**
      * Поле имя
      */
@@ -30,16 +30,17 @@ public class Patient implements PatientInterface {
     /**
      * Поле списка анализов
      */
-    private List<Analysis> analyses;
+    private ArrayList<Analysis> analyses;
     /**
      * Конструктор - создание нового объекта с определенным значением
      *
      * @param name - значение тип крови
      * @param age - значение возраста пациента
      * @param gender - значение пола пациента
-     * @see Patient#Patient(String, int, String)
+     * @see Patient#Patient(int, String, int, String)
      */
-    public Patient(String name, int age, String gender) {
+    public Patient(int id, String name, int age, String gender) {
+        this.id = id;
         this.name = name;
         this.age = age;
         this.gender = gender;

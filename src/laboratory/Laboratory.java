@@ -1,8 +1,8 @@
 package laboratory;
 import analysis.Analysis;
 
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 /**
@@ -12,7 +12,8 @@ import java.util.Objects;
  * @version 1.0
  */
 
-public class Laboratory<T extends Analysis> {
+public class Laboratory implements Serializable {
+    private int id;
     /**
      * Поле название
      */
@@ -20,14 +21,14 @@ public class Laboratory<T extends Analysis> {
     /**
      * Поле списка анализов
      */
-    private List<T> analyses;
+    private ArrayList<Analysis> analyses;
     /**
      * Конструктор - создание нового объекта с определенными значениями
      *
      * @param name  - название анализа
-     * @see Laboratory#Laboratory(String)
+     * @see Laboratory#Laboratory(int, String)
      */
-    public Laboratory(String name) {
+    public Laboratory(int id, String name) {
         this.name = name;
         this.analyses = new ArrayList<>();
     }
@@ -52,19 +53,19 @@ public class Laboratory<T extends Analysis> {
      *
      * @return позвращает список анализов
      */
-    public List<T> getAnalyses() {
+    public ArrayList<?> getAnalyses() {
         return analyses;
     }
     /**
      * Функция добавления анализа в список {@link Laboratory#analyses}
      */
-    public void addAnalysis(T analysis) {
+    public void addAnalysis(Analysis analysis) {
         analyses.add(analysis);
     }
     /**
      * Функция удаления анализа из списка {@link Laboratory#analyses}
      */
-    public void removeAnalysis(T analysis) {
+    public void removeAnalysis(Analysis analysis) {
         analyses.remove(analysis);
     }
     /**
@@ -74,7 +75,7 @@ public class Laboratory<T extends Analysis> {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Laboratory number: ").append(name).append("\n");
-        for (T analysis : analyses) {
+        for (Analysis analysis : analyses) {
             sb.append(analysis.toString()).append("\n");
         }
         return sb.toString();
@@ -86,7 +87,7 @@ public class Laboratory<T extends Analysis> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Laboratory)) return false;
-        Laboratory<?> that = (Laboratory<?>) o;
+        Laboratory that = (Laboratory) o;
         return Objects.equals(name, that.name) && Objects.equals(analyses, that.analyses);
     }
     /**

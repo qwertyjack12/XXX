@@ -1,13 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="242b70a4-53a0-4d22-bad7-b09572954616" name="Changes" comment="">
+    <list default="true" id="242b70a4-53a0-4d22-bad7-b09572954616" name="Changes" comment="نقل بغباء اللفت الخاص بك إلى بلدي جيثب">
+      <change afterPath="$PROJECT_DIR$/src/svc/Deserializator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svc/Serializator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svc/controllers/AnalysisController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svc/controllers/LaboratoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svc/controllers/PatientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svc/services/analysisService/AnalysisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svc/services/analysisService/AnalysisServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svc/services/laboratoryService/LaboratoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svc/services/laboratoryService/LaboratoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svc/services/patientService/PatientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svc/services/patientService/PatientServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svc/view/ConsoleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svc/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analysis/Analysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analysis/Analysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analysis/BloodAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analysis/BloodAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analysis/UrineAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analysis/UrineAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/laboratory/Laboratory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laboratory/Laboratory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patients/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patients/Patient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,14 +48,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "T:/Java/xxx"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;T:/Java/xxx&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -35,6 +65,29 @@
       <option name="presentableId" value="Default" />
       <updated>1682509839570</updated>
     </task>
+    <task id="LOCAL-00001" summary="نقل بغباء اللفت الخاص بك إلى بلدي جيثب">
+      <created>1682510384092</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682510384092</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="نقل بغباء اللفت الخاص بك إلى بلدي جيثب" />
+    <option name="LAST_COMMIT_MESSAGE" value="نقل بغباء اللفت الخاص بك إلى بلدي جيثب" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/svc/view/ConsoleView.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

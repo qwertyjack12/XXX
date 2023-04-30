@@ -1,5 +1,7 @@
 package analysis;
 
+import java.io.Serializable;
+
 /**
  * Класс анализа мочи со свойством urineColor
  *
@@ -7,7 +9,7 @@ package analysis;
  * @version 1.0
  */
 
-public class UrineAnalysis extends Analysis {
+public class UrineAnalysis extends Analysis implements Serializable {
     /**
      * Поле цвета мочи
      */
@@ -18,10 +20,10 @@ public class UrineAnalysis extends Analysis {
      * @param urineColor - значение цвет мочи
      * @param name - значение название анализа
      * @param description - значение описание анализа
-     * @see UrineAnalysis#UrineAnalysis(String, String, String)
+     * @see UrineAnalysis#UrineAnalysis(int, String, String, String)
      */
-    public UrineAnalysis(String name, String description, String urineColor) {
-        super(name, description);
+    public UrineAnalysis(int id, String name, String description, String urineColor) {
+        super(id, name, description);
         this.urineColor = urineColor;
     }
     /**

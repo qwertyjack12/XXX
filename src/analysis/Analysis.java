@@ -1,5 +1,6 @@
 package analysis;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -9,7 +10,8 @@ import java.util.Objects;
  * @version 1.0
  */
 
-public abstract class Analysis {
+public abstract class Analysis implements Serializable {
+    private  int id;
     /**
      * Поле название
      */
@@ -21,11 +23,13 @@ public abstract class Analysis {
     /**
      * Конструктор - создание нового объекта с определенными значениями
      *
+     * @param id - id анализа
      * @param name  - название анализа
      * @param description - описание
-     * @see Analysis#Analysis(String, String)
+     * @see Analysis#Analysis(int, String, String)
      */
-    public Analysis(String name, String description) {
+    public Analysis(int id,String name, String description) {
+        this.id = id;
         this.name = name;
         this.description = description;
     }

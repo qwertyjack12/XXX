@@ -1,5 +1,7 @@
 package analysis;
 
+import java.io.Serializable;
+
 /**
  * Класс анализа крови со свойством bloodType
  *
@@ -7,7 +9,7 @@ package analysis;
  * @version 1.0
  */
 
-public class BloodAnalysis extends Analysis {
+public class BloodAnalysis extends Analysis implements Serializable {
     /**
      * Поле типа крови
      */
@@ -18,10 +20,10 @@ public class BloodAnalysis extends Analysis {
      * @param bloodType - значение тип крови
      * @param name - значение название анализа
      * @param description - значение описание анализа
-     * @see BloodAnalysis#BloodAnalysis(String, String, String)
+     * @see BloodAnalysis#BloodAnalysis(int, String, String, String)
      */
-    public BloodAnalysis(String name, String description, String bloodType) {
-        super(name, description);
+    public BloodAnalysis(int id, String name, String description, String bloodType) {
+        super(id, name, description);
         this.bloodType = bloodType;
     }
     /**
