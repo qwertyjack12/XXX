@@ -57,7 +57,7 @@ public class PatientController {
     }
     public void removePatient(){
         patientService.getPatients();
-        System.out.println("id of analysis: ");
+        System.out.println("id of patients: ");
         int id = listenInt();
         patientService.removePatient(id);
     }
